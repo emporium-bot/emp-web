@@ -1,4 +1,10 @@
 import ReactDOM from 'react-dom';
 import { App } from '@/app';
+import { ThemeProvider } from './theme';
 
-ReactDOM.render(<App />, document.getElementById('app-root'));
+ReactDOM.render(
+	<ThemeProvider>
+		<App />
+	</ThemeProvider>,
+	document.getElementById('app-root')
+);
