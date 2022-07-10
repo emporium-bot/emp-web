@@ -1,10 +1,10 @@
 import ReactDOM from 'react-dom';
-import { App } from '@/app';
+import { Registration } from '@/app';
 import { ThemeProvider } from './theme';
 
 ReactDOM.render(
 	<ThemeProvider>
-		<App />
+		<Registration />
 	</ThemeProvider>,
 	document.getElementById('app-root')
 );
