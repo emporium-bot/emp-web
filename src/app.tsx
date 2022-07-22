@@ -1,7 +1,15 @@
-import { Button } from '@/components';
+import { Button, PlugButton } from '@/components';
 import { useTheme } from '@/theme';
+import { usePlugInit } from './integrations';
 
 export const App: React.FC = () => {
-	const { toggleTheme } = useTheme();
-	return <Button onClick={toggleTheme}>Hello World</Button>;
+  usePlugInit();
+  const { toggleTheme } = useTheme();
+
+  return (
+    <>
+      <Button onClick={toggleTheme}>Toggle Theme</Button>
+      <PlugButton />
+    </>
+  );
 };
