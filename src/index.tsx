@@ -5,10 +5,10 @@ import { ThemeProvider } from './theme';
 import { store } from './store';
 
 ReactDOM.render(
-	<ReduxProvider store={store}>
-		<ThemeProvider>
-			<App />
-		</ThemeProvider>
-	</ReduxProvider>,
-	document.getElementById('app-root')
+  <ReduxProvider store={store}>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </ReduxProvider>,
+  document.getElementById('app-root')
 );
